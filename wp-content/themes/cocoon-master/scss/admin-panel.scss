@@ -1,0 +1,115 @@
+///////////////////////////////////////
+// 管理パネル
+///////////////////////////////////////
+.admin-panel{
+  background-color: $text_color;
+  color: $white;
+  opacity: 0.8;
+  padding: 10px;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transition: .3s;
+  z-index: 9999;
+
+  a{
+    color: $white;
+  }
+
+  // &::before{
+  //   font-family: FontAwesome;
+  //   content: '\f201';
+  // }
+
+}
+
+.admin-pv,
+.admin-edit,
+.admin-amp,
+.admin-checks,
+.admin-cresponsive{
+  border-radius: 3px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  margin: 6px 4px;
+
+  >span{
+    padding: 0 4px;
+  }
+}
+
+.admin-amp,
+.admin-checks,
+.admin-cresponsive{
+  a{
+    margin: 0 4px;
+    font-size: 0.8em;
+  }
+}
+
+.admin-pv{
+  position: relative;
+
+  .admin-pv-by{
+    position: absolute;
+    bottom: -1em;
+    right: 0.4em;
+    font-size: 0.6em;
+    background-color: $text_color;
+    padding: 0 5px;
+  }
+}
+
+.apdt-pc-only{
+  display: flex;
+}
+
+.apdt-mobile-only{
+  display: none;
+}
+
+//管理バーとヘッダーモバイルボタンとの兼ね合い
+//1023px以下
+@media screen and (max-width: 1023px){
+	.admin-bar .mobile-header-menu-buttons{
+		margin-top: 32px;
+	}
+
+	.admin-bar.mblt-header-mobile-buttons,
+	.admin-bar.mblt-header-and-footer-mobile-buttons{
+		margin-top: 32px;
+	}
+	@media screen and (max-width: 782px){
+		.admin-bar .mobile-header-menu-buttons{
+			margin-top: 0;
+		}
+
+		.admin-bar.mblt-header-mobile-buttons,
+		.admin-bar.mblt-header-and-footer-mobile-buttons{
+			margin-top: 0;
+		}
+	}
+}
+
+.entry-card .admin-pv {
+  margin: 0.4em 0 1.4em;
+  padding: 0;
+  border-width: 0;
+  font-size: 0.9em;
+  >span{
+    padding: 0 7px 0 0;
+    &:nth-of-type(2){
+      padding: 0;
+    }
+  }
+  .admin-pv-by{
+    background-color: transparent;
+    bottom: 0;
+    display: none;
+  }
+}

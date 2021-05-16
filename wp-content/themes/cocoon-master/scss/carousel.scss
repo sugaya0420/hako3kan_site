@@ -1,0 +1,87 @@
+/************************************
+** カルーセル
+************************************/
+.carousel{
+  margin-top: 10px;
+  line-height: 1.1;
+
+  // .cat-label{
+  //   display: none;
+  // }
+
+  .slick-arrow:before{
+    color: $thin;
+  }
+}
+
+.carousel-in{
+  background-color: $white;
+  padding: 2px 0;
+}
+
+.carousel-content{
+  margin: 0 30px;
+  padding-bottom: 4px;
+  a{
+    float: left;
+    width: 10%;
+  }
+
+  .slick-track{
+    display: flex;
+  }
+  .slick-slide {
+    height: auto;
+    //display: block;
+  }
+  .a-wrap{
+    margin: 0 3px 3px;
+  }
+}
+
+
+
+// .slick-initialized .slick-slide{
+//   display: block !important;
+// }
+
+
+
+.carousel-entry-card-thumb{
+  @extend %card_thumb;
+  float: none;
+  display: inline-block;
+}
+
+.carousel-entry-card-title{
+  font-size: 16px;
+  margin-top: 4px;
+  max-height: 3.2em;
+  overflow: hidden;
+}
+
+/************************************
+** カルーセルの非表示設定
+************************************/
+.no-carousel{
+  .carousel{
+    display: none;
+  }
+}
+
+
+.carousel{
+  display: none;
+  animation: carousel-show .6s cubic-bezier(0, 0, .2, 1);
+  .a-wrap{
+    //opacity: 0;
+    padding: 0.2em 0.3em;
+  }
+}
+
+//カルーセルの枠線
+.ccb-carousel-border{
+  .a-wrap{
+    border: 1px solid $basic_border_color;
+  }
+}

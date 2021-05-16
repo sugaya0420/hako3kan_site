@@ -1,0 +1,358 @@
+@charset "UTF-8";
+.faw::before {
+  font-family: FontAwesome;
+  padding-right: 4px;
+}
+
+/*ビジュアルエディターのスタイルを書く*/
+body#tinymce {
+  padding: 0 20px !important;
+  margin-top: 0 !important;
+  background-image: none;
+  background-color: #fff;
+}
+
+body#tinymce.wp-editor::before {
+  background: none;
+}
+
+.column-2,
+.column-3 {
+  margin: 16px 0;
+}
+
+/* .column-2::before,
+.column-3::before{
+  content: "※カラムへの着色はエディタのみ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1em;
+  width: 31%;
+  font-size: 0.8em;
+  padding: 4px 8px;
+  background-color: #f7dde4;
+  text-align: center;
+}
+
+html[lang="en"] .column-2::before,
+html[lang="en"] .column-3::before{
+  content: "* Coloring is Editor Only.";
+} */
+.column-left {
+  background-color: #c7e1ef;
+}
+
+.column-center {
+  background-color: #c9e8d8;
+}
+
+.column-right {
+  background-color: #ffecd3;
+}
+
+.btn-wrap,
+.blogcard-type {
+  padding: 6px;
+  margin: 4px 0;
+  position: relative;
+}
+
+span.btn-wrap {
+  padding: 6px 18px 6px;
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+.btn-wrap::before {
+  position: absolute;
+  top: -2px;
+  right: 4px;
+}
+
+.btn-wrap::before {
+  font-family: FontAwesome;
+  color: #DBB004;
+  content: '\f146';
+}
+
+.blogcard-type::before {
+  font-family: FontAwesome;
+  font-size: 0.6em;
+  padding: 0 4px;
+  background-color: #587b93;
+  color: #fff;
+  top: 0;
+  right: 0;
+  position: absolute;
+  white-space: pre;
+}
+
+.btn-wrap {
+  background-color: #f8e58c;
+}
+
+.blogcard-type {
+  padding-top: 1em;
+  background-color: #e6ecf0;
+}
+
+.blogcard-type.bct-none::before {
+  content: "  ラベルなし";
+}
+
+.blogcard-type.bct-related::before {
+  content: "  関連記事";
+}
+
+.blogcard-type.bct-reference::before {
+  content: "  参考記事";
+}
+
+.blogcard-type.bct-reference-link::before {
+  content: "  参考リンク";
+}
+
+.blogcard-type.bct-popular::before {
+  content: "  人気記事";
+}
+
+.blogcard-type.bct-pickup::before {
+  content: "  ピックアップ";
+}
+
+.blogcard-type.bct-check::before {
+  content: "  チェック";
+}
+
+.blogcard-type.bct-together::before {
+  content: "  あわせて読みたい";
+}
+
+.blogcard-type.bct-detail::before {
+  content: "  詳細はこちら";
+}
+
+.blogcard-type.bct-official::before {
+  content: "  公式サイト";
+}
+
+.blogcard-type.bct-dl::before {
+  content: "  ダウンロード";
+}
+
+.font-awesome-5 .bct-related::before,
+.font-awesome-5 .blank-box.bb-ok::before,
+.font-awesome-5 .blank-box.bb-point::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+.font-awesome-5 .bb-ok::before {
+  content: "  OK";
+}
+.font-awesome-5 .blank-box.bb-check::before,
+.font-awesome-5 .blank-box.bb-comment::before,
+.font-awesome-5 .blank-box.bb-tips::before,
+.font-awesome-5 .blank-box.bb-pickup::before,
+.font-awesome-5 .blank-box.bb-hint::before,
+.font-awesome-5 .blank-box.bb-bookmark::before,
+.font-awesome-5 .blank-box.bb-memo::before,
+.font-awesome-5 .blank-box.bb-download::before,
+.font-awesome-5 .blank-box.bb-break::before,
+.font-awesome-5 .blank-box.bb-ng::before,
+.font-awesome-5 .blank-box.bb-good::before,
+.font-awesome-5 .blank-box.bb-bad::before,
+.font-awesome-5 .blank-box.bb-profile::before,
+.font-awesome-5 .bct-none::before,
+.font-awesome-5 .bct-reference::before,
+.font-awesome-5 .bct-reference-link::before,
+.font-awesome-5 .bct-popular::before,
+.font-awesome-5 .bct-pickup::before,
+.font-awesome-5 .bct-check::before,
+.font-awesome-5 .bct-together::before,
+.font-awesome-5 .bct-detail::before,
+.font-awesome-5 .bct-official::before,
+.font-awesome-5 .bct-dl::before,
+.font-awesome-5 .btn-wrap::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 501;
+}
+.font-awesome-5 .bb-memo::before {
+  content: "  MEMO";
+}
+.font-awesome-5 .blank-box.bb-tab::before {
+  font-family: "Font Awesome 5 Free", Aharoni, "Arial Black", Impact, Arial, sans-serif;
+}
+.font-awesome-5 .blank-box.bb-amazon::before {
+  font-family: "Font Awesome 5 Brands", Aharoni, "Arial Black", Impact, Arial, sans-serif;
+  font-weight: 400;
+}
+
+/*ビジュアルエディターにinstagramの引用符が表示される対応*/
+.instagram-media {
+  position: relative !important;
+}
+
+.postbody.main {
+  width: auto;
+}
+
+.button-wrap-msg,
+.box-block-msg {
+  font-size: 10px;
+  text-align: center;
+}
+
+.blank-box.bb-tab::before {
+  background-color: #949495;
+  font-family: Aharoni, "Arial Black", Impact, Arial, sans-serif;
+  position: absolute;
+  font-size: 13px;
+  top: -1.8em;
+  line-height: 1.8;
+  color: #fff;
+  left: -3px;
+  border-radius: 6px 6px 0 0;
+  padding: 0 1em 0 .8em;
+  font-family: FontAwesome, Aharoni, "Arial Black", Impact, Arial, sans-serif;
+}
+.blank-box.bb-red::before {
+  background-color: #e60033;
+}
+.blank-box.bb-pink::before {
+  background-color: #e95295;
+}
+.blank-box.bb-purple::before {
+  background-color: #884898;
+}
+.blank-box.bb-blue::before {
+  background-color: #0095d9;
+}
+.blank-box.bb-green::before {
+  background-color: #3eb370;
+}
+.blank-box.bb-orange::before {
+  background-color: #f39800;
+}
+.blank-box.bb-yellow::before {
+  background-color: #ffd900;
+}
+.blank-box.bb-brown::before {
+  background-color: #954e2a;
+}
+.blank-box.bb-grey::before {
+  background-color: #949495;
+}
+.blank-box.bb-black::before {
+  background-color: #333;
+}
+.blank-box.bb-deep::before {
+  background-color: #55295b;
+}
+.blank-box.bb-indigo::before {
+  background-color: #1e50a2;
+}
+.blank-box.bb-light-blue::before {
+  background-color: #2ca9e1;
+}
+.blank-box.bb-cyan::before {
+  background-color: #00a3af;
+}
+.blank-box.bb-teal::before {
+  background-color: #007b43;
+}
+.blank-box.bb-light-green::before {
+  background-color: #8bc34a;
+}
+.blank-box.bb-lime::before {
+  background-color: #c3d825;
+}
+.blank-box.bb-amber::before {
+  background-color: #ffc107;
+}
+.blank-box.bb-deep-orange::before {
+  background-color: #ea5506;
+}
+.blank-box.bb-white::before {
+  background-color: #fff;
+}
+
+.bb-check::before {
+  content: "  CHECK";
+}
+
+.bb-comment::before {
+  content: "  COMMENT";
+}
+
+.bb-point::before {
+  content: "  POINT";
+}
+
+.bb-tips::before {
+  content: "  TIPS";
+}
+
+.bb-hint::before {
+  content: "  HINT";
+}
+
+.bb-pickup::before {
+  content: "  PICKUP";
+}
+
+.bb-bookmark::before {
+  content: "  BOOKMARK";
+}
+
+.bb-memo::before {
+  content: "  MEMO";
+}
+
+.bb-download::before {
+  content: "  DOWNLOAD";
+}
+
+.bb-break::before {
+  content: "  BREAK";
+}
+
+.bb-amazon::before {
+  content: "  AMAZON";
+}
+
+.bb-ok::before {
+  content: "  OK";
+}
+
+.bb-ng::before {
+  content: "  NG";
+}
+
+.bb-good::before {
+  content: "  GOOD";
+}
+
+.bb-bad::before {
+  content: "  BAD";
+}
+
+.bb-profile::before {
+  content: "  PROFILE";
+}
+
+.has-small-font-size {
+  font-size: 13px;
+}
+
+.has-medium-font-size {
+  font-size: 20px;
+}
+
+.has-large-font-size {
+  font-size: 36px;
+}
+
+.has-huge-font-size, .has-larger-font-size {
+  font-size: 42px;
+}

@@ -1,0 +1,102 @@
+//ブログカードスタイル
+
+.blogcard-wrap{
+  margin: 24px auto;
+  padding: 0;
+  width: 90%;
+  background-color: $white;
+}
+
+.blogcard{
+  @include card_padding;
+  border: 1px solid $basic_border_color;
+  border-radius: $basic_border_radius;
+  line-height: 1.6;
+  position: relative;
+}
+
+.blogcard-thumbnail{
+  float: left;
+  margin-top: $emtry_card_thumb_margin_top;
+  width: 160px;
+  img{
+    width: 100%;
+  }
+}
+
+.blogcard-content{
+  margin-left: 170px;
+  max-height: 140px;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+.blogcard-title{
+  font-weight: bold;
+  margin-bottom: 0.4em;
+}
+
+.blogcard-snippet{
+  font-size: 0.8em;
+}
+
+.blogcard-footer{
+  clear: both;
+  font-size: 16px;
+  padding-top: 0.6%;
+  // vertical-align: baseline;
+  // div{
+  //   display: inline;
+  // }
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+}
+
+.blogcard-site{
+  float: left;
+  display: flex;
+  //align-items: center;
+  align-content: center;
+}
+
+.blogcard-date{
+  float: right;
+  display: flex;
+  //align-items: center;
+  align-content: center;
+
+  //margin-top: 3px;
+}
+
+.blogcard-favicon{
+  margin-right: 4px;
+  margin-top: 2px;
+}
+
+img.blogcard-favicon-image{
+  border: 0;
+  box-shadow: none;
+}
+
+/************************************
+** ブログカードのサムネイルスタイル
+************************************/
+.ib-right,
+.eb-right{
+
+  .blogcard-thumbnail{
+    float: right;
+    margin-left: $thumb_content_margin;
+  }
+
+  .blogcard-content{
+    margin-left: 0;
+    margin-right: 170px;
+  }
+
+}
+
+.nwa{
+  @include blog_card_834;
+}

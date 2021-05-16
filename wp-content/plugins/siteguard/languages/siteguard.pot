@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-16 16:04+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin/siteguard-menu-admin-filter.php:96
+msgid "https://www.jp-secure.com/siteguard_wp_plugin_en/howto/admin_filter/"
+msgstr ""
+
+#: admin/siteguard-menu-advanced-setting.php:56
+msgid ""
+"https://www.jp-secure.com/siteguard_wp_plugin_en/howto/advanced_setting/"
+msgstr ""
+
+#: admin/siteguard-menu-captcha.php:80
+msgid "https://www.jp-secure.com/siteguard_wp_plugin_en/howto/captcha/"
+msgstr ""
+
+#: admin/siteguard-menu-dashboard.php:26
+msgid "https://www.jp-secure.com/siteguard_wp_plugin_en/"
+msgstr ""
+
+#: admin/siteguard-menu-fail-once.php:51
+msgid "https://www.jp-secure.com/siteguard_wp_plugin_en/howto/fail_once/"
+msgstr ""
+
+#: admin/siteguard-menu-login-alert.php:59
+msgid "https://www.jp-secure.com/siteguard_wp_plugin_en/howto/login_alert/"
+msgstr ""
+
+#: admin/siteguard-menu-login-history.php:20
+msgid "https://www.jp-secure.com/siteguard_wp_plugin_en/howto/login_history/"
+msgstr ""
+
+#: admin/siteguard-menu-login-lock.php:80
+msgid "https://www.jp-secure.com/siteguard_wp_plugin_en/howto/login_lock/"
+msgstr ""
+
+#: admin/siteguard-menu-protect-xmlrpc.php:124
+msgid "https://www.jp-secure.com/siteguard_wp_plugin_en/howto/xmlrpc/"
+msgstr ""
+
+#: admin/siteguard-menu-rename-login.php:119
+msgid "https://www.jp-secure.com/siteguard_wp_plugin_en/howto/rename_login/"
+msgstr ""
+
+#: admin/siteguard-menu-same-error.php:52
+msgid "https://www.jp-secure.com/siteguard_wp_plugin_en/howto/same_error/"
+msgstr ""
+
+#: admin/siteguard-menu-updates-notify.php:80
+msgid "https://www.jp-secure.com/siteguard_wp_plugin_en/howto/updates_notify/"
+msgstr ""
+
+#: admin/siteguard-menu-waf-tuning-support.php:229
+msgid ""
+"https://www.jp-secure.com/siteguard_wp_plugin_en/howto/waf_tuning_support/"
+msgstr ""
+
+#: admin/siteguard-menu-waf-tuning-support.php:329
+msgid "You have specified this rule for deletion:"
+msgstr ""
+
+#: admin/siteguard-waf-exclude-rule-table.php:35
+msgid "Edit"
+msgstr ""
+
+#: admin/siteguard-waf-exclude-rule-table.php:36
+msgid "Delete"
+msgstr ""
+
+#: classes/siteguard-login-alert.php:18
+msgid "New login at %SITENAME%"
+msgstr ""
+
+#: classes/siteguard-login-alert.php:19
+msgid ""
+"%USERNAME% logged in at %DATE% %TIME%\n"
+"\n"
+"== Login information ==\n"
+"IP Address: %IPADDRESS%\n"
+"Referer: %REFERER%\n"
+"User-Agent: %USERAGENT%\n"
+"\n"
+"--\n"
+"SiteGuard WP Plugin"
+msgstr ""

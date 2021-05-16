@@ -1,0 +1,342 @@
+/************************************
+** 内容
+************************************/
+.content{
+  margin-top: 24px;
+}
+
+/*エントリー・アーカイブの見出し*/
+.entry-title,
+.archive-title{
+  font-size: 26px;
+  margin: 16px 0;
+  line-height: 1.3;
+}
+
+.archive-title{
+  span{
+    margin-right: 10px;
+  }
+}
+
+.entry-content{
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+pre,
+pre *{
+  line-height: 1.6;
+  word-wrap: normal;
+}
+
+/*本文下カテゴリとタグ*/
+.entry-categories-tags{
+  @extend %bottom_margin;
+  >div{
+    margin-bottom: 0.5em;
+  }
+}
+
+.ctdt-one-row{
+  >div{
+    display: inline-block;
+  }
+}
+
+.ctdt-category-only{
+  .entry-tags{
+    display: none;
+  }
+}
+
+.ctdt-tag-only{
+  .entry-categories{
+    display: none;
+  }
+}
+
+.ctdt-none{
+  display: none;
+}
+
+/*本文下カテゴリ*/
+.cat-link{
+  @include link_cancel($white);
+  display: inline-block;
+  margin-right: 5px;
+  padding: 2px 6px;
+  font-size: 12px;
+  background-color: $text_color;
+  //border: 1px solid $text_color;
+  //color: $white;
+  border-radius: $badge_border_radius;
+  word-break: break-all;
+
+  &:hover{
+    opacity: 0.5;
+    color: $white;
+    // @include bgc_hover;
+    // color: $text_color;
+  }
+}
+
+/*本文下タグ*/
+.tag-link{
+  @include link_cancel;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 1px 5px;
+  font-size: 12px;
+  border: 1px solid $x_pallid_text_color;
+  border-radius: $badge_border_radius;
+  word-break: break-all;
+
+  &:hover{
+    @include bgc_hover;
+  }
+}
+
+/************************************
+** 投稿・固定ページで使うHTML要素
+************************************/
+p,
+.paragraph{
+  margin: 1.2em 0;
+}
+
+
+table {
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  th{
+    background-color: $xx_thin;
+  }
+
+  tr{
+    &:nth-of-type(2n+1){
+      background-color: $xxx_thin;
+    }
+
+    // &:hover{
+    //   @include bgc_hover;
+    // }
+  }
+
+  th,
+  td{
+    border: 1px solid $x_thin;
+    padding: 6px;
+  }
+}
+
+///////////////////////////////////////
+// レスポンシブテーブル
+///////////////////////////////////////
+.scrollable-table{
+  -webkit-overflow-scrolling: touch;
+
+  //1列目を固定
+  &.stfc-sticky tr{
+    >*:first-child {
+      background-color: #e9eff2;
+      color: $text_color;
+      position: sticky;
+      position: -webkit-sticky;
+      left: 0;
+      z-index: 2;
+    }
+  }
+}
+
+.scrollable-table table{
+  border-collapse: collapse;
+  max-width: none;
+}
+
+.scrollable-table th{
+  background-color: #eee;
+}
+
+.scrollable-table th,
+.scrollable-table td{
+  border: solid 1px #ccc;
+  padding: 3px 5px;
+  white-space: nowrap;
+}
+
+.scrollable-table {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  margin-bottom: 1em;
+}
+
+// figure.wp-block-table.scrollable-block-table{
+//   &.aligncenter,
+//   &.alignleft,
+//   &.alignright{
+//     display: block;
+//   }
+// }
+
+///////////////////////////////////////////
+// テーブル修正
+// 草村さん案
+///////////////////////////////////////////
+figure.wp-block-table table {
+  width: auto;
+}
+// figure.wp-block-table[class*="align"] {
+//   max-width: 100%;
+//   display: block;
+// }
+// figure.wp-block-table[class*="align"] table {
+//   width: auto;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+figure.wp-block-table.alignwide table,
+figure.wp-block-table.alignfull table{
+  width: 100%;
+}
+.main figure.wp-block-table {
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+figure.wp-block-table table {
+  margin-right: auto;
+}
+figure.wp-block-table.aligncenter table {
+  margin-left: auto;
+}
+figure.wp-block-table.alignright table {
+  margin-left: 0;
+}
+
+.scroll-hint-icon-wrap {
+  overflow: hidden;
+}
+
+
+.article{
+  @import "article";
+}
+
+/************************************
+** 引用（blockquote）
+************************************/
+blockquote {
+  background-color: $xxx_thin;
+  border: 1px solid $thin;
+  margin: 1em 0;
+  padding: 10px 1.2em;
+  position: relative;
+
+  &::before,
+  &::after{
+    color: #C8C8C8;
+    font-family: serif;
+    position: absolute;
+    font-size: 300%;
+
+  }
+
+  &::before {
+    content: "“";
+    line-height: 1.1;
+    left: 10px;
+    top: 0;
+  }
+
+  &::after {
+    content: "”";
+    line-height: 0;
+    right: 10px;
+    bottom: 0px;
+  }
+
+  cite{
+    font-size: 0.7em;
+  }
+}
+
+/*本文下情報*/
+.footer-meta{
+  font-size: 0.8em;
+  text-align: right;
+}
+
+/*投稿者*/
+.author-info .post-author{
+  font-size: 14px;
+}
+
+/************************************
+** ページ管理画面の設定で「本文のみ」表示
+************************************/
+.content-only{
+  .header-container,
+  .appeal,
+  .ad-area,
+  .sns-share,
+  .date-tags,
+  .sns-follow,
+  .article-footer,
+  .under-entry-content,
+  .breadcrumb,
+  .main-scroll,
+  .footer,
+  .go-to-top-button,
+  .notice-area,
+  .content-top,
+  .content-bottom,
+  .recommended
+  {
+    display: none;
+  }
+  .carousel{
+    display: none !important;
+  }
+}
+
+/************************************
+** 外部リンク・内部リンク
+************************************/
+span.external-icon,
+span.internal-icon{
+  margin-left: 3px;
+  font-size: 0.8em;
+}
+
+///////////////////////////////////////
+// ログインして意外ユーザーに表示するメッセージ
+///////////////////////////////////////
+.login-user-only{
+  text-align: center;
+  padding: 2em;
+  background-color: $xxx_thin;
+  border: 1px solid $basic_border_color;
+  margin: 1em 0;
+}
+
+///////////////////////////////////////
+// 投稿関連情報を表示
+///////////////////////////////////////
+.no-post-date .post-date,
+.no-post-update .post-update,
+.no-post-author .author-info {
+  display: none;
+}
+
+.read-time{
+  text-align: center;
+  font-size: 0.7em;
+  border-top: 4px double $x_thin;
+  border-bottom: 4px double $x_thin;
+  margin: 0 3%;
+}

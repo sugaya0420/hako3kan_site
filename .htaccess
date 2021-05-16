@@ -1,0 +1,10 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.hako3kan\.com
+RewriteRule ^(.*) http://hako3kan.com/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ http://hako3kan.com/$1 [R=301,L]
+order deny,allow

@@ -1,0 +1,1651 @@
+/*拡張クラスを追加するスタイルシート*/
+%badge{
+  color: $white;
+  padding: 1px 5px 0;
+  border-radius: 2px;
+  font-size: 12px;
+}
+.badge,
+.ref,
+.reffer,
+.sankou{
+  @extend %badge;
+  background-color: $orange_color;
+  // color: $white;
+  // background-color: $orange_color;
+  // padding: 1px 5px 0;
+  // border-radius: 2px;
+  // font-size: 12px;
+}
+
+.badge-red{@extend %badge;background-color: $red_color;}
+.badge-pink{@extend %badge;background-color: $pink_color;}
+.badge-purple{@extend %badge;background-color: $purple_color;}
+.badge-blue{@extend %badge;background-color: $blue_color;}
+.badge-green{@extend %badge;background-color: $green_color;}
+.badge-yellow{@extend %badge;background-color: $yellow_color;}
+.badge-brown{@extend %badge;background-color: $brown_color;}
+.badge-grey{@extend %badge;background-color: $grey_color;}
+
+/*太字*/
+.bold{
+  font-weight: bold;
+}
+
+/*赤色*/
+.red{
+  color: $red_color;
+}
+
+/*太字で赤色*/
+.bold-red{
+  font-weight:bold;
+  color: $red_color;
+}
+
+/*青色*/
+.blue{
+  color: $blue_color;
+}
+
+/*太字で青色*/
+.bold-blue{
+  font-weight:bold;
+  color: $blue_color;
+}
+
+/*緑色*/
+.green{
+  color: $green_color;
+}
+
+/*太字で緑色*/
+.bold-green{
+  font-weight:bold;
+  color: $green_color;
+}
+
+/*赤のアンダーライン*/
+.red-under{
+  border-bottom: 2px solid red;
+}
+
+$marker_yellow: #ff9;
+$marker_red: #ffd0d1;
+$marker_blue: #a8dafb;
+
+/*マーカーの黄色のような色*/
+.marker{
+  background-color: $marker_yellow;
+}
+.marker-red{
+  background-color: $marker_red;
+}
+.marker-blue{
+  background-color: $marker_blue;
+}
+
+$marker_u_yellow: $marker_yellow;
+$marker_u_red: $marker_red;
+$marker_u_blue: $marker_blue;
+
+/*下半分のマーカー色（km）*/
+.marker-under{
+  background: linear-gradient(transparent 60%, $marker_u_yellow 60%);
+}
+.marker-under-red{
+  background: linear-gradient(transparent 60%, $marker_u_red 60%);
+}
+.marker-under-blue{
+  background: linear-gradient(transparent 60%, $marker_u_blue 60%);
+}
+
+/*打ち消し線*/
+.strike{
+  text-decoration: line-through;
+}
+
+/*キーボードキーのスタイル*/
+.keyboard-key {
+  background-color: #f9f9f9;
+  background-image: -moz-linear-gradient(center top , #eee, #f9f9f9, #eee);
+  border: 1px solid $middle_thickness;
+  border-radius: 2px;
+  box-shadow: 1px 2px 2px #ddd;
+  font-family: inherit;
+  font-size: 0.85em;
+  padding: 1px 3px;
+}
+
+/*ブートストラップのインフォメーションライクな囲みが表示される*/
+.is-style-primary-box,
+.primary-box,
+.sp-primary,
+.primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+  padding:15px;
+  border-radius:4px;
+  margin-bottom:20px;
+}
+
+/*サクセスメッセージ*/
+.is-style-success-box,
+.success-box,
+.sp-success,
+.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  padding:15px;
+  border-radius:4px;
+  margin-bottom:20px;
+}
+
+/*インフォメッセージ*/
+.is-style-info-box,
+.info-box,
+.sp-info,
+.info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+  padding:15px;
+  border-radius:4px;
+  margin-bottom:20px;
+}
+
+/*注意メッセージ*/
+.is-style-warning-box,
+.warning-box,
+.sp-warning,
+.warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  padding:15px;
+  border-radius:4px;
+  margin-bottom:20px;
+}
+
+/*警告メッセージ*/
+.is-style-danger-box,
+.danger-box,
+.sp-danger,
+.danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding:15px;
+  border-radius:4px;
+  margin-bottom:20px;
+}
+
+/*セカンダリー*/
+.is-style-secondary-box,
+.secondary-box {
+  color: #383d41;
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+  padding:15px;
+  border-radius:4px;
+  margin-bottom:20px;
+}
+
+/*ライト*/
+.is-style-light-box,
+.light-box {
+  color: #818182;
+  background-color: #fefefe;
+  border-color: #fdfdfe;
+  padding:15px;
+  border-radius:4px;
+  margin-bottom:20px;
+}
+
+/*ダーク*/
+.is-style-dark-box,
+.dark-box {
+  color: #1b1e21;
+  background-color: #d6d8d9;
+  border-color: #c6c8ca;
+  padding:15px;
+  border-radius:4px;
+  margin-bottom:20px;
+}
+
+/*******************************
+* 補足説明
+********************************/
+.is-style-information-box,
+.is-style-question-box,
+.is-style-alert-box,
+.is-style-memo-box,
+.is-style-comment-box,
+.is-style-ok-box,
+.is-style-ng-box,
+.is-style-good-box,
+.is-style-bad-box,
+.is-style-profile-box,
+.information-box,
+.question-box,
+.alert-box,
+.information,
+.question,
+.alert,
+.memo-box,
+.comment-box,
+.common-icon-box{
+  //background-color: #F4F3EB;
+  padding: 20px 20px 20px 72px;
+  border-radius: 4px;
+  position: relative;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  //overflow: hidden;
+}
+
+.block-box{
+  p:first-of-type{
+    margin-top: 0;
+  }
+  p:last-of-type{
+    margin-bottom: 0;
+  }
+
+  ol,
+  ul{
+    margin: 0;
+  }
+}
+
+.is-style-information-box,
+.information-box,
+.information{
+  background: #f3fafe;
+  border: 1px solid #bde4fc;
+}
+
+.is-style-question-box,
+.question-box,
+.question{
+  background: #fff7cc;
+  border: 1px solid #ffe766;;
+}
+
+.is-style-alert-box,
+.alert-box,
+.alert{
+  background: #fdf2f2;
+  border: 1px solid #f6b9b9;
+}
+
+.is-style-memo-box,
+.memo-box{
+  background: #ebf8f4;
+  border: 1px solid #8dd7c1;
+}
+
+.is-style-comment-box,
+.comment-box{
+  background: #fefefe;
+  border: 1px solid #ccd;
+}
+
+.is-style-ok-box,
+.ok-box{
+  background: #f2fafb;
+  border: 1px solid #3cb2cc;
+}
+
+.is-style-ng-box,
+.ng-box{
+  background: #ffe7e7;
+  border: 1px solid #dd5454;
+}
+
+.is-style-good-box,
+.good-box{
+  background: #f7fcf7;
+  border: 1px solid #98e093;
+}
+
+.is-style-bad-box,
+.bad-box{
+  background: #fff1f4;
+  border: 1px solid #eb6980;
+}
+
+.is-style-profile-box,
+.profile-box{
+  background: #fefefe;
+  border: 1px solid #ccd;
+}
+
+.is-style-information-box::before,
+.is-style-question-box::before,
+.is-style-alert-box::before,
+.is-style-memo-box::before,
+.is-style-comment-box::before,
+.is-style-ok-box::before,
+.is-style-ng-box::before,
+.is-style-good-box::before,
+.is-style-bad-box::before,
+.is-style-profile-box::before,
+.information-box::before,
+.question-box::before,
+.alert-box::before,
+.information::before,
+.question::before,
+.alert::before,
+.memo-box::before,
+.comment-box::before,
+.common-icon-box::before{
+  font-family: "FontAwesome";
+  font-size: 34px;
+  position: absolute;
+  //color: #EAE3B4;
+  padding-right: .15em;
+  line-height: 1em;
+  top: 50%;
+  margin-top: -.5em;
+  left: 10px;
+  width: 44px;
+  text-align: center;
+}
+
+.is-style-information-box::before,
+.information-box::before,
+.information::before{
+  content: '\f05a';
+  color:#87cefa;
+  border-right: 1px solid #bde4fc;
+}
+
+.is-style-question-box::before,
+.question-box::before,
+.question::before{
+  content: '\f059';
+  color: gold;
+  border-right: 1px solid #ffe766;
+}
+
+.is-style-alert-box::before,
+.alert-box::before,
+.alert::before{
+  content: '\f06a';
+  color: #f3aca9;
+  border-right: 1px solid #f6b9b9;
+}
+
+.is-style-memo-box::before,
+.memo-box::before{
+  content: '\f040';
+  color: #7ad0b6;
+  border-right: 1px solid #8dd7c1;
+}
+
+.is-style-comment-box::before,
+.comment-box::before,
+.is-style-profile-box::before,
+.profile-box::before{
+  content: '\f0e5';
+  color: #999;
+  border-right: 1px solid #ccd;
+}
+
+.is-style-profile-box::before,
+.profile-box::before{
+  content: '\f007';
+}
+
+.is-style-ok-box::before,
+.ok-box::before{
+  content: '\f10c';
+  color: #3cb2cc;
+  border-right: 1px solid #3cb2cc;
+  font-size: 36px;
+}
+
+.is-style-ng-box::before,
+.ng-box::before{
+  content: '\f00d';
+  color: #dd5454;
+  border-right: 1px solid #dd5454;
+  font-size: 36px;
+}
+
+.is-style-good-box::before,
+.good-box::before{
+  content: '\f164';
+  color: #98e093;
+  border-right: 1px solid #98e093;
+  font-size: 36px;
+}
+
+.is-style-bad-box::before,
+.bad-box::before{
+  content: '\f165';
+  color: #eb6980;
+  border-right: 1px solid #eb6980;
+  font-size: 36px;
+}
+
+#wpadminbar .alert::before{
+  display: none;
+}
+
+@media screen and (max-width:440px){
+  .is-style-information-box,
+  .is-style-question-box,
+  .is-style-alert-box,
+  .is-style-memo-box,
+  .is-style-comment-box,
+  .is-style-ok-box,
+  .is-style-ng-box,
+  .is-style-good-box,
+  .is-style-bad-box,
+  .is-style-profile-box,
+  .information-box,
+  .question-box,
+  .alert-box,
+  .information,
+  .question,
+  .alert,
+  .memo-box,
+  .comment-box,
+  .common-icon-box{
+    padding: 26px 6px 6px;
+  }
+
+  .is-style-information-box::before,
+  .is-style-question-box::before,
+  .is-style-alert-box::before,
+  .is-style-memo-box::before,
+  .is-style-comment-box::before,
+  .is-style-ok-box::before,
+  .is-style-ng-box::before,
+  .is-style-good-box::before,
+  .is-style-bad-box::before,
+  .is-style-profile-box::before,
+  .information-box::before,
+  .question-box::before,
+  .alert-box::before,
+  .information::before,
+  .question::before,
+  .alert::before,
+  .memo-box::before,
+  .comment-box::before,
+  .common-icon-box::before{
+    padding: 0;
+    top: 0.7em;
+    left: 50%;
+    margin-left: -0.5em;
+    // top: 1em;
+    // left: 6px;
+    font-size: 18px;
+    border: none;
+    width: auto;
+  }
+
+  .container .blank-box{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+///////////////////////////////////////
+// 白抜きボックス
+///////////////////////////////////////
+$bb_gray: #999;
+$bb_yellow: #fc9f4d;
+$bb_red: #d05a6e;
+$bb_blue: #2ea9df;
+$bb_green: $green_color;
+.blank-box{
+  border: 3px solid $grey_color;
+  padding: 1.2em 1em;
+  margin: 1em 2%;
+  border-radius: $basic_border_radius;
+    ol, ul {
+    margin: 0;
+  }
+
+  &.bb-red{border-color: $red_color;}
+  &.bb-pink{border-color: $pink_color;}
+  &.bb-purple{border-color: $purple_color;}
+  &.bb-blue{border-color: $blue_color;}
+  &.bb-green{border-color: $green_color;}
+  &.bb-orange{border-color: $orange_color;}
+  &.bb-yellow{border-color: $yellow_color;}
+  &.bb-brown{border-color: $brown_color;}
+  &.bb-grey{border-color: $grey_color;}
+  &.bb-black{border-color: $black_color;}
+
+  &.bb-deep{border-color: $deep_color;}
+  &.bb-indigo{border-color: $indigo_color;}
+  &.bb-light-blue{border-color: $light_blue_color;}
+  &.bb-cyan{border-color: $cyan_color;}
+  &.bb-teal{border-color: $teal_color;}
+  &.bb-light-green{border-color: $light_green_color;}
+  &.bb-lime{border-color: $lime_color;}
+  &.bb-amber{border-color: $amber_color;}
+  &.bb-deep-orange{border-color: $deep_orange_color;}
+  &.bb-white{border-color: $white;}
+
+
+  &.bb-tab{
+    position: relative;
+    margin-top: 2em;
+    border-top-left-radius: 0;
+
+    .bb-label{
+      @include tabbox_label;
+      .fa{
+        margin-right: 6px;
+      }
+    }
+
+
+    &.bb-red .bb-label{background-color: $red_color;}
+    &.bb-pink .bb-label{background-color: $pink_color;}
+    &.bb-purple .bb-label{background-color: $purple_color;}
+    &.bb-blue .bb-label{background-color: $blue_color;}
+    &.bb-green .bb-label{background-color: $green_color;}
+    &.bb-orange .bb-label{background-color: $orange_color;}
+    &.bb-yellow .bb-label{background-color: $yellow_color;}
+    &.bb-brown .bb-label{background-color: $brown_color;}
+    &.bb-grey .bb-label{background-color: $grey_color;}
+    &.bb-black .bb-label{background-color: $black_color;}
+    &.bb-deep .bb-label{background-color: $deep_color;}
+    &.bb-indigo .bb-label{background-color: $indigo_color;}
+    &.bb-light-blue .bb-label{background-color: $light_blue_color;}
+    &.bb-cyan .bb-label{background-color: $cyan_color;}
+    &.bb-teal .bb-label{background-color: $teal_color;}
+    &.bb-light-green .bb-label{background-color: $light_green_color;}
+    &.bb-lime .bb-label{background-color: $lime_color;}
+    &.bb-amber .bb-label{background-color: $amber_color;}
+    &.bb-deep-orange .bb-label{background-color: $deep_orange_color;}
+    &.bb-white .bb-label{background-color: $white;}
+
+  }
+
+  &.sticky{
+    border-width: 0 0 0 6px;
+    border-color: $pallid_text_color;
+    background-color: $xx_thin;
+
+    &.st-yellow{
+      border-color: #FFA103;
+      background-color: #ffeac7;
+    }
+    &.st-red{
+      border-color: #CD3740;
+      background-color: #F5DADC;
+    }
+    &.st-blue{
+      border-color: #0066cc;
+      background-color: #E5F2FF;
+    }
+    &.st-green{
+      border-color: #028760;
+      background-color: #CBEFE4;
+    }
+  }
+}
+
+.is-style-blank-box-red,
+.is-style-blank-box-navy,
+.is-style-blank-box-blue,
+.is-style-blank-box-yellow,
+.is-style-blank-box-green,
+.is-style-blank-box-pink,
+.is-style-blank-box-orange{
+  @extend .blank-box;
+}
+.is-style-blank-box-red{
+  border-color: $red_color;
+}
+.is-style-blank-box-pink{
+  border-color: $pink_color;
+}
+.is-style-blank-box-navy{
+  border-color: $indigo_color;
+}
+.is-style-blank-box-blue{
+  border-color: $blue_color;
+}
+.is-style-blank-box-yellow{
+  border-color: $yellow_color;
+}
+.is-style-blank-box-green{
+  border-color: $green_color;
+}
+.is-style-blank-box-orange{
+  border-color: $orange_color;
+}
+
+.is-style-sticky-gray,
+.is-style-sticky-yellow,
+.is-style-sticky-red,
+.is-style-sticky-blue,
+.is-style-sticky-green{
+  @extend .blank-box;
+  @extend .sticky;
+}
+
+.is-style-sticky-yellow{
+  border-color: #FFA103;
+  background-color: #ffeac7;
+}
+
+.is-style-sticky-red{
+  border-color: #CD3740;
+  background-color: #F5DADC;
+}
+
+.is-style-sticky-blue{
+  border-color: #0066cc;
+  background-color: #E5F2FF;
+
+}
+
+.is-style-sticky-green{
+  border-color: #028760;
+  background-color: #CBEFE4;
+
+}
+
+
+.bb-check .bb-label .fa::before{
+  content: $bb-check;
+}
+.bb-check .bb-label::after{
+  content: $bb-check-text;
+}
+
+.bb-comment .bb-label .fa::before{
+  content: $bb-comment;
+}
+.bb-comment .bb-label::after{
+  content: $bb-comment-text;
+}
+
+.bb-point .bb-label .fa::before{
+  content: $bb-point;
+}
+.bb-point .bb-label::after{
+  content: $bb-point-text;
+}
+
+.bb-tips .bb-label .fa::before{
+  content: $bb-tips;
+}
+.bb-tips .bb-label::after{
+  content: $bb-tips-text;
+}
+
+.bb-hint .bb-label .fa::before{
+  content: $bb-hint;
+}
+.bb-hint .bb-label::after{
+  content: $bb-hint-text;
+}
+
+.bb-pickup .bb-label .fa::before{
+  content: $bb-pickup;
+}
+.bb-pickup .bb-label::after{
+  content: $bb-pickup-text;
+}
+
+.bb-bookmark .bb-label .fa::before{
+  content: $bb-bookmark;
+}
+.bb-bookmark .bb-label::after{
+  content: $bb-bookmark-text;
+}
+
+.bb-memo .bb-label .fa::before{
+  content: $bb-memo;
+}
+.bb-memo .bb-label::after{
+  content: $bb-memo-text;
+}
+
+.bb-download .bb-label .fa::before{
+  content: $bb-download;
+}
+.bb-download .bb-label::after{
+  content: $bb-download-text;
+}
+
+.bb-break .bb-label .fa::before{
+  content: $bb-break;
+}
+.bb-break .bb-label::after{
+  content: $bb-break-text;
+}
+
+.bb-amazon .bb-label .fa::before{
+  content: $bb-amazon;
+}
+.bb-amazon .bb-label::after{
+  content: $bb-amazon-text;
+}
+
+.bb-ok .bb-label .fa::before{
+  content: $bb-ok;
+}
+.bb-ok .bb-label::after{
+  content: $bb-ok-text;
+}
+
+.bb-ng .bb-label .fa::before{
+  content: $bb-ng;
+}
+.bb-ng .bb-label::after{
+  content: $bb-ng-text;
+}
+
+.bb-good .bb-label .fa::before{
+  content: $bb-good;
+}
+.bb-good .bb-label::after{
+  content: $bb-good-text;
+}
+
+.bb-bad .bb-label .fa::before{
+  content: $bb-bad;
+}
+.bb-bad .bb-label::after{
+  content: $bb-bad-text;
+}
+
+.bb-profile .bb-label .fa::before{
+  content: $bb-profile;
+}
+.bb-profile .bb-label::after{
+  content: $bb-profile-text;
+}
+
+/*******************************
+* 続きはWEBで的な検索ボックス
+********************************/
+div.search-form{
+  margin: 3em 0;
+  display: flex;
+  max-width: 420px;
+}
+
+.search-form > div{
+  border: 1px solid #555;
+  border-radius: 2px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.search-form div.sform{
+  background-color: $white;
+  width: 100%;
+}
+
+.search-form div.sbtn{
+  background-color: #1155EE;
+  color: #fff;
+  text-align: center;
+  width: 140px;
+}
+
+.search-form div.sbtn:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  margin-right: 7px;
+}
+
+.search-form div.sbtn::after{
+  content: "\f25a";
+  font-family: FontAwesome;
+  color: #000;
+  position: absolute;
+  bottom: -1.5em;
+  font-size: 25px;
+}
+
+@media screen and (max-width:450px){
+  .search-form div{
+    padding: 3px 5px;
+    font-size: 75%;
+  }
+
+  .search-form div.sform{
+    min-width: 180px;
+  }
+
+  .search-form div.sbtn{
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  .search-form div.sbtn::after{
+    font-size: 20px;
+    margin-left: -10px;
+  }
+}
+
+.btn-wrap{
+  min-height: 2em;
+  margin: 1.6em 0;
+  img[width="1"]{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.btn,
+.btn-wrap > a,
+.wp-block-freeform .btn-wrap > a{
+  color: $white;
+  background-color: #32373c;
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  line-height: normal;
+  padding: 7px 13px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  border: 2px solid transparent;
+  position: relative;
+
+  amp-img{
+    position: absolute;
+  }
+}
+
+.btn:before,
+.btn:after,
+.btn-wrap > a:before,
+.btn-wrap > a:after{
+  font-family: FontAwesome;
+  margin-right: 12px;
+  transition: all .2s ease;
+}
+
+.btn-m,
+.btn-wrap.btn-wrap-m > a{
+  padding: 14px 45px;
+  font-size: 16px;
+}
+
+.btn-l,
+.btn-wrap.btn-wrap-l > a{
+  padding: 14px 20px;
+  font-size: 18px;
+  //display: block;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after{
+    content: "\f105";
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+  }
+}
+
+.btn:hover,
+.btn-wrap > a:hover{
+  opacity: 0.7;
+  color: $white;
+  transition: $bgc_hover_anime;
+  &::after{
+    right: -4px;
+    transition: $bgc_hover_anime;
+  }
+}
+
+.btn-l.btn-circle,
+.btn-wrap.btn-wrap-l.btn-wrap-circle > a {
+  &::after{
+    right: 8px;
+  }
+  &:hover{
+    &::after{
+      right: 4px;
+    }
+  }
+}
+
+/* ボタンを光らせる */
+.btn-shine,
+.btn-wrap-shine > a {
+  overflow: hidden;
+}
+.btn-shine:before,
+.btn-wrap-shine > a:before {
+  animation: shine 3s ease-in-out infinite;
+  background-color: #fff;
+  content: " ";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: -180px;
+  transform: rotate(45deg);
+  width: 30px;
+}
+
+.btn-circle,
+.btn-wrap-circle > a{
+  border-radius: 99px;
+}
+
+.btn-white, .btn-wrap.btn-wrap-white > a{color: $text_color;background-color: $white;}
+#container .btn-white:hover, #container .btn-wrap.btn-wrap-white > a:hover{color: $text_color;}
+.btn-red, .btn-wrap.btn-wrap-red > a{background-color: $red_color;}
+.btn-pink, .btn-wrap.btn-wrap-pink > a{background-color: $pink_color;}
+.btn-purple, .btn-wrap.btn-wrap-purple > a{background-color: $purple_color;}
+.btn-deep, .btn-wrap.btn-wrap-deep > a{background-color: $deep_color;}
+.btn-indigo, .btn-wrap.btn-wrap-indigo > a{background-color: $indigo_color;}
+.btn-blue, .btn-wrap.btn-wrap-blue > a{background-color: $blue_color;}
+.btn-light-blue, .btn-wrap.btn-wrap-light-blue > a{background-color: $light_blue_color;}
+.btn-cyan, .btn-wrap.btn-wrap-cyan > a{background-color: $cyan_color;}
+.btn-teal, .btn-wrap.btn-wrap-teal > a{background-color: $teal_color;}
+.btn-green, .btn-wrap.btn-wrap-green > a{background-color: $green_color;}
+.btn-light-green, .btn-wrap.btn-wrap-light-green > a{background-color: $light_green_color;}
+.btn-lime, .btn-wrap.btn-wrap-lime > a{background-color:$lime_color}
+.btn-yellow, .btn-wrap.btn-wrap-yellow > a{background-color: $yellow_color;}
+.btn-amber, .btn-wrap.btn-wrap-amber > a{background-color: $amber_color;}
+.btn-orange, .btn-wrap.btn-wrap-orange > a{background-color: $orange_color;}
+.btn-deep-orange, .btn-wrap.btn-wrap-deep-orange > a{background-color: $deep_orange_color;}
+.btn-brown, .btn-wrap.btn-wrap-brown > a{background-color: $brown_color;}
+.btn-grey, .btn-wrap.btn-wrap-grey > a{background-color: $grey_color;}
+.btn-blue-grey, .btn-wrap.btn-wrap-blue-grey > a{background-color: $blue_gray_color;}
+.btn-black, .btn-wrap.btn-wrap-black > a{background-color: $black_color;}
+
+.btn-arrow-right:before, .btn-wrap.btn-wrap-arrow-right > a:before{content: "\f061";}
+.btn-chevron-right:before, .btn-wrap.btn-wrap-chevron-circle-right > a:before{content: "\f054";}
+.btn-angle-right:before, .btn-wrap.btn-wrap-angle-right > a:before{content: "\f105";}
+.btn-caret-right:before, .btn-wrap.btn-wrap-caret-right > a:before{content: "\f0da";}
+.btn-long-arrow-right:before, .btn-wrap.btn-wrap-long-arrow-right > a:before{content: "\f178";}
+.btn-chevron-circle-right:before, .btn-wrap.btn-wrap-chevron-circle-right > a:before{content: "\f138";}
+.btn-angle-double-right:before, .btn-wrap.btn-wrap-angle-double-right > a:before{content: "\f101";}
+.btn-arrow-circle-right:before, .btn-wrap.btn-wrap-arrow-circle-right > a:before{content: "\f0a9";}
+.btn-hand-o-right:before, .btn-wrap.btn-wrap-hand-o-right > a:before{content: "\f0a4";}
+.btn-arrow-circle-o-right:before, .btn-wrap.btn-wrap-arrow-circle-o-right > a:before{content: "\f18e";}
+.btn-caret-square-o-right:before, .btn-wrap.btn-wrap-caret-square-o-right > a:before{content: "\f152";}
+
+.micro-copy{
+  &.alignleft{
+    float: none;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  &.alignright{
+    float: none;
+    margin-left: 0;
+    text-align: right;
+  }
+
+  &.aligncenter{
+    text-align: center;
+  }
+}
+
+.micro-top{
+  font-size: 0.8em;
+  margin-bottom: -1.2em;
+  margin-top: 1em;
+}
+.micro-bottom{
+  font-size: 0.8em;
+  margin-top: -1.2em;
+  margin-bottom: 1em;
+}
+.micro-center{
+  text-align: center;
+}
+.micro-right{
+  text-align: right;
+}
+
+
+.micro-balloon {
+	position: relative;
+	background: $white;
+  border: 1px solid $x_pallid_text_color;
+  border-radius: 4px;
+  padding: 3px 12px;
+  display: table;
+  //margin-bottom: -.7em;
+  font-size: 0.8em;
+  &.has-background{
+    color: #fff;
+  }
+  &.aligncenter{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &.alignleft{
+    margin-right: auto;
+  }
+  &.alignright{
+    margin-left: auto;
+  }
+}
+.micro-balloon:after, .micro-balloon:before {
+  top: calc(100% - 1px);
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.micro-balloon:after {
+	border-top-color: $white;
+	border-width: 7px;
+	margin-left: -7px;
+}
+.micro-balloon:before {
+	border-top-color: $x_pallid_text_color;
+	border-width: 8px;
+	margin-left: -8px;
+}
+
+.micro-balloon-center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.micro-balloon-right{
+  margin-left: auto;
+}
+.micro-bottom.micro-balloon{
+  margin-top: -.5em;
+}
+.micro-bottom.micro-balloon:after, .micro-bottom.micro-balloon:before {
+  bottom: calc(100% - 1px);
+  top: auto;
+}
+
+.micro-bottom.micro-balloon:after {
+	border-bottom-color: $white;
+  border-top-color: transparent;
+}
+.micro-bottom.micro-balloon:before {
+  border-bottom-color: $x_pallid_text_color;
+  border-top-color: transparent;
+}
+
+.micro-icon{
+  margin-right: 6px;
+}
+
+.micro-copy.alignleft,
+.micro-copy.alignright{
+  float: none;
+}
+.micro-copy.alignright{
+  margin-left: auto;
+}
+
+///////////////////////////////////////////
+// Cocoon Blocks共通オプション
+///////////////////////////////////////////
+.mc-circle{
+  border-radius: 2em;
+  background-clip: padding-box;
+}
+@mixin micro_copycolor($color: 'red'){
+  background-color: $color;
+  color:$white;
+  border: none;
+  &.micro-bottom{
+    &::after{
+      border-bottom-color: $color;
+      border-top-color: transparent;
+    }
+  }
+  &::before{
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+  }
+  &::after{
+    border-top-color: $color;
+  }
+}
+
+.mc-red{@include micro_copycolor($red_color);}
+.mc-pink{@include micro_copycolor($pink_color);}
+.mc-purple{@include micro_copycolor($purple_color);}
+.mc-blue{@include micro_copycolor($blue_color);}
+.mc-green{@include micro_copycolor($green_color);}
+.mc-orange{@include micro_copycolor($orange_color);}
+.mc-yellow{@include micro_copycolor($yellow_color);}
+.mc-brown{@include micro_copycolor($brown_color);}
+.mc-grey{@include micro_copycolor($grey_color);}
+.mc-black{@include micro_copycolor($black_color);}
+
+.mc-deep{@include micro_copycolor($deep_color);}
+.mc-indigo{@include micro_copycolor($indigo_color);}
+.mc-light-blue{@include micro_copycolor($light_blue_color);}
+.mc-cyan{@include micro_copycolor($cyan_color);}
+.mc-teal{@include micro_copycolor($teal_color);}
+.mc-light-green{@include micro_copycolor($light_green_color);}
+.mc-lime{@include micro_copycolor($lime_color);}
+.mc-amber{@include micro_copycolor($amber_color);}
+.mc-deep-orange{@include micro_copycolor($deep_orange_color);}
+.mc-white{@include micro_copycolor($white_color);}
+
+.blogcard-label{
+  position: absolute;
+  top: -18px;
+  left: 16px;
+  font-size: 13px;
+  padding: 3px 0.6em;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+  letter-spacing: 0.7px;
+  display: none;
+}
+.blogcard-label .fa::before{
+  margin-right: 6px;
+}
+.blogcard-type .blogcard-label{
+ display: block;
+}
+.bct-none .blogcard-label{
+  display: none;
+}
+
+.bct-related .blogcard-label .fa::before{
+  content: $bct-related;
+}
+.bct-related .blogcard-label::after{
+  content: $bct-related-text;
+}
+.bct-reference .blogcard-label .fa::before{
+  content: $bct-reference;
+}
+.bct-reference .blogcard-label::after{
+  content: $bct-reference-text;
+}
+.bct-reference-link .blogcard-label .fa::before{
+  content: $bct-reference-link;
+}
+.bct-reference-link .blogcard-label::after{
+  content: $bct-reference-link-text;
+}
+.bct-popular .blogcard-label .fa::before{
+  content: $bct-popular;
+}
+.bct-popular .blogcard-label::after{
+  content: $bct-popular-text;
+}
+.bct-pickup .blogcard-label .fa::before{
+  content: $bct-pickup;
+}
+.bct-pickup .blogcard-label::after{
+  content: $bct-pickup-text;
+}
+.bct-check .blogcard-label .fa::before{
+  content: $bct-check;
+}
+.bct-check .blogcard-label::after{
+  content: $bct-check-text;
+}
+.bct-together .blogcard-label .fa::before{
+  content: $bct-together;
+}
+.bct-together .blogcard-label::after{
+  content: $bct-together-text;
+}
+.bct-detail .blogcard-label .fa::before{
+  content: $bct-detail;
+}
+.bct-detail .blogcard-label::after{
+  content: $bct-detail-text;
+}
+.bct-official .blogcard-label .fa::before{
+  content:$bct-official;
+}
+.bct-official .blogcard-label::after{
+  content:$bct-official-text;
+}
+.bct-dl .blogcard-label .fa::before{
+  content:$bct-dl;
+}
+.bct-dl .blogcard-label::after{
+  content:$bct-dl-text;
+}
+
+///////////////////////////////////////////
+// ボタンブロック
+///////////////////////////////////////////
+.button-block{
+  float: none;
+  margin: 1em 0;
+  &.alignleft{
+    text-align: left;
+  }
+  &.aligncenter{
+    text-align: center;
+  }
+  &.alignright{
+    text-align: right;
+  }
+}
+
+/************************************
+** 汎用ボックス共通
+************************************/
+.block-box-label{
+  display: flex;
+  &::before{
+    margin-right: 0.3em;
+  }
+}
+
+/************************************
+** キャプションボックス
+************************************/
+.caption-box{
+  margin: 1.2em 0;
+  border: 2px solid $current_bgc;
+  border-radius: $basic_border_radius;
+  &.has-border-color .box-label{
+    color: $white;
+  }
+}
+
+.caption-box-label{
+  padding: 0.2em 0.8em;
+  background-color: $current_bgc;
+}
+.caption-box-content{
+  padding: 0.4em 0.8em;
+}
+
+@mixin caption_color($color: $red_color) {
+  &.caption-box{
+    border-color: $color;
+  }
+  .caption-box-label{
+    background-color: $color;
+    color: $white;
+  }
+}
+
+.cb-red{@include caption_color($red_color);}
+.cb-pink{@include caption_color($pink_color);}
+.cb-purple{@include caption_color($purple_color);}
+.cb-blue{@include caption_color($blue_color);}
+.cb-green{@include caption_color($green_color);}
+.cb-orange{@include caption_color($orange_color);}
+.cb-yellow{@include caption_color($yellow_color);}
+.cb-brown{@include caption_color($brown_color);}
+.cb-grey{@include caption_color($grey_color);}
+.cb-black{@include caption_color($black_color);}
+
+.cb-deep{@include caption_color($deep_color);}
+.cb-indigo{@include caption_color($indigo_color);}
+.cb-light-blue{@include caption_color($light_blue_color);}
+.cb-cyan{@include caption_color($cyan_color);}
+.cb-teal{@include caption_color($teal_color);}
+.cb-light-green{@include caption_color($light_green_color);}
+.cb-lime{@include caption_color($lime_color);}
+.cb-amber{@include caption_color($amber_color);}
+.cb-deep-orange{@include caption_color($deep_orange_color);}
+.cb-white{@include caption_color($white_color);}
+
+/************************************
+** キャプションタブボックス
+************************************/
+.tab-caption-box{
+  margin: 1.2em 0;
+  &.block-box.has-background{
+    background-color: transparent;
+  }
+  &.has-border-color .box-label{
+    color: $white;
+  }
+}
+.tab-caption-box-label{
+  padding: 0 0.8em;
+  font-size: 0.9em;
+  background-color: $current_bgc;
+  display: inline-block;
+  border-top-left-radius: $middle_border_radius;
+  border-top-right-radius: $middle_border_radius;
+}
+.tab-caption-box-content{
+  margin-top: -3px;
+  border: 3px solid $current_bgc;
+  padding: 0.4em 0.8em;
+  border-radius: $middle_border_radius;
+  border-top-left-radius: 0;
+}
+@mixin caption_tab_color($color: $red_color) {
+  .tab-caption-box-label{
+    background-color: $color;
+    color: $white;
+  }
+  .tab-caption-box-content{
+    border-color: $color;
+  }
+}
+
+.tcb-red{@include caption_tab_color($red_color);}
+.tcb-pink{@include caption_tab_color($pink_color);}
+.tcb-purple{@include caption_tab_color($purple_color);}
+.tcb-blue{@include caption_tab_color($blue_color);}
+.tcb-green{@include caption_tab_color($green_color);}
+.tcb-orange{@include caption_tab_color($orange_color);}
+.tcb-yellow{@include caption_tab_color($yellow_color);}
+.tcb-brown{@include caption_tab_color($brown_color);}
+.tcb-grey{@include caption_tab_color($grey_color);}
+.tcb-black{@include caption_tab_color($black_color);}
+
+.tcb-deep{@include caption_tab_color($deep_color);}
+.tcb-indigo{@include caption_tab_color($indigo_color);}
+.tcb-light-blue{@include caption_tab_color($light_blue_color);}
+.tcb-cyan{@include caption_tab_color($cyan_color);}
+.tcb-teal{@include caption_tab_color($teal_color);}
+.tcb-light-green{@include caption_tab_color($light_green_color);}
+.tcb-lime{@include caption_tab_color($lime_color);}
+.tcb-amber{@include caption_tab_color($amber_color);}
+.tcb-deep-orange{@include caption_tab_color($deep_orange_color);}
+.tcb-white{@include caption_tab_color($white_color);}
+
+/************************************
+** ラベルボックス
+************************************/
+.label-box{
+  margin: 1.2em 0;
+  &.block-box.has-background{
+    background-color: transparent;
+  }
+}
+.label-box-label{
+  margin-left: 1em;
+  padding: 0 0.8em;
+  font-size: 0.9em;
+  //background-color: $white;
+  //display: inline-block;
+  font-weight: bold;
+  text-shadow:
+  $white 3px 0px 0px,
+  $white 2px 1px 0px,
+  $white 2px 2px 0px,
+  $white 2px 3px 0px,
+  $white 1px 3px 0px,
+  $white -0px 3px 0px,
+  $white -1px 3px 0px,
+  $white -2px 2px 0px,
+  $white -3px 1px 0px,
+  $white -3px 0px 0px,
+  $white -3px -1px 0px,
+  $white -3px -2px 0px,
+  $white -2px -2px 0px,
+  $white -1px -3px 0px,
+  $white -0px -3px 0px,
+  $white 1px -3px 0px,
+  $white 2px -2px 0px,
+  $white 2px -2px 0px,
+  $white 3px -1px 0px;
+  // border: 2px solid $middle_thickness;
+  // border-radius: $middle_border_radius;
+}
+.label-box-content{
+  margin-top: -0.9em;
+  border: 3px solid $middle_thickness;
+  padding: 1em 0.8em 0.4em;
+  border-radius: $middle_border_radius;
+}
+@mixin label_color($color: $red_color) {
+  .label-box-content{
+    border-color: $color;
+  }
+}
+
+.lb-red{@include label_color($red_color);}
+.lb-pink{@include label_color($pink_color);}
+.lb-purple{@include label_color($purple_color);}
+.lb-blue{@include label_color($blue_color);}
+.lb-green{@include label_color($green_color);}
+.lb-orange{@include label_color($orange_color);}
+.lb-yellow{@include label_color($yellow_color);}
+.lb-brown{@include label_color($brown_color);}
+.lb-grey{@include label_color($grey_color);}
+.lb-black{@include label_color($black_color);}
+
+.lb-deep{@include label_color($deep_color);}
+.lb-indigo{@include label_color($indigo_color);}
+.lb-light-blue{@include label_color($light_blue_color);}
+.lb-cyan{@include label_color($cyan_color);}
+.lb-teal{@include label_color($teal_color);}
+.lb-light-green{@include label_color($light_green_color);}
+.lb-lime{@include label_color($lime_color);}
+.lb-amber{@include label_color($amber_color);}
+.lb-deep-orange{@include label_color($deep_orange_color);}
+.lb-white{@include label_color($white_color);}
+
+/************************************
+** トグル表示ボタン
+************************************/
+.toggle-wrap {
+  margin: 1.2em 0;
+  position: relative;
+  >p{
+    margin: 0;
+  }
+  .toggle-content {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0 1em;
+    height: 0;
+    transition: $bgc_hover_anime;
+    overflow: hidden;
+  }
+}
+
+$toggle_border_width: 2px;
+.toggle-button {
+  display: block;
+  cursor: pointer;
+  padding: 3px 10px;
+  background-color: $xx_thin;
+  border: $toggle_border_width solid $basic_border_color;
+  text-align: center;
+  border-radius: $basic_border_radius;
+  position: relative;
+  margin: 0;
+
+  &::before{
+    content: '\f067';
+    font-family: FontAwesome;
+    margin-right: 0.4em;
+    font-size: 0.8em;
+    color: $x_pallid_text_color;
+  }
+
+
+}
+
+.toggle-button:hover {
+  opacity: 0.7;
+}
+
+.toggle-checkbox{
+  display: none;
+}
+
+.toggle-checkbox:checked ~ .toggle-button{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  &::before{
+    content: '\f068';
+  }
+}
+
+.toggle-checkbox:checked ~ .toggle-content {
+  //display: block;
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  transition: $bgc_hover_anime;
+  padding: 1em;
+  border: $toggle_border_width solid $basic_border_color;
+  border-top-width: 0;
+  border-bottom-left-radius: $basic_border_radius;
+  border-bottom-right-radius: $basic_border_radius;
+}
+
+@mixin toggle_color($color: $blue_color) {
+  .toggle-button{
+    border: $toggle_border_width solid $color;
+    background: $color;
+    color: $white;
+    &::before{
+      color: $thin;
+    }
+  }
+  .toggle-checkbox:checked ~ .toggle-content{
+    border-color: $color;
+  }
+}
+
+.tb-red{@include toggle_color($red_color);}
+.tb-pink{@include toggle_color($pink_color);}
+.tb-purple{@include toggle_color($purple_color);}
+.tb-blue{@include toggle_color($blue_color);}
+.tb-green{@include toggle_color($green_color);}
+.tb-orange{@include toggle_color($orange_color);}
+.tb-yellow{@include toggle_color($yellow_color);}
+.tb-brown{@include toggle_color($brown_color);}
+.tb-grey{@include toggle_color($grey_color);}
+.tb-black{@include toggle_color($black_color);}
+
+.tb-deep{@include toggle_color($deep_color);}
+.tb-indigo{@include toggle_color($indigo_color);}
+.tb-light-blue{@include toggle_color($light_blue_color);}
+.tb-cyan{@include toggle_color($cyan_color);}
+.tb-teal{@include toggle_color($teal_color);}
+.tb-light-green{@include toggle_color($light_green_color);}
+.tb-lime{@include toggle_color($lime_color);}
+.tb-amber{@include toggle_color($amber_color);}
+.tb-deep-orange{@include toggle_color($deep_orange_color);}
+.tb-white{@include toggle_color($white_color);}
+
+
+.iic-red li::before{color: $red_color;}
+.iic-pink li::before{color: $pink_color;}
+.iic-purple li::before{color: $purple_color;}
+.iic-blue li::before{color: $blue_color;}
+.iic-green li::before{color: $green_color;}
+.iic-orange li::before{color: $orange_color;}
+.iic-yellow li::before{color: $yellow_color;}
+.iic-brown li::before{color: $brown_color;}
+.iic-grey li::before{color: $grey_color;}
+.iic-black li::before{color: $black_color;}
+
+.iic-deep li::before{color: $deep_color;}
+.iic-indigo li::before{color: $indigo_color;}
+.iic-light-blue li::before{color: $light_blue_color;}
+.iic-cyan li::before{color: $cyan_color;}
+.iic-teal li::before{color: $teal_color;}
+.iic-light-green li::before{color: $light_green_color;}
+.iic-lime li::before{color: $lime_color;}
+.iic-amber li::before{color: $amber_color;}
+.iic-deep-orange li::before{color: $deep_orange_color;}
+.iic-white li::before{color: $white_color;}
+
+// div{
+//   .has-red-color{color: $red_color;}
+//   .has-pink-color{color: $pink_color;}
+//   .has-purple-color{color: $purple_color;}
+//   .has-blue-color{color: $blue_color;}
+//   .has-green-color{color: $green_color;}
+//   .has-orange-color{color: $orange_color;}
+//   .has-yellow-color{color: $yellow_color;}
+//   .has-brown-color{color: $brown_color;}
+//   .has-grey-color{color: $grey_color;}
+//   .has-black-color{color: $black_color;}
+
+//   .has-deep-color{color: $deep_color;}
+//   .has-indigo-color{color: $indigo_color;}
+//   .has-light-blue-color{color: $light_blue_color;}
+//   .has-cyan-color{color: $cyan_color;}
+//   .has-teal-color{color: $teal_color;}
+//   .has-light-green-color{color: $light_green_color;}
+//   .has-lime-color{color: $lime_color;}
+//   .has-amber-color{color: $amber_color;}
+//   .has-deep-orange-color{color: $deep_orange_color;}
+//   .has-white-color{color: $white_color;}
+
+
+//   .has-red-background-color{background-color: $red_color;}
+//   .has-pink-background-color{background-color: $pink_color;}
+//   .has-purple-background-color{background-color: $purple_color;}
+//   .has-blue-background-color{background-color: $blue_color;}
+//   .has-green-background-color{background-color: $green_color;}
+//   .has-orange-background-color{background-color: $orange_color;}
+//   .has-yellow-background-color{background-color: $yellow_color;}
+//   .has-brown-background-color{background-color: $brown_color;}
+//   .has-grey-background-color{background-color: $grey_color;}
+//   .has-black-background-color{background-color: $black_color;}
+
+//   .has-deep-background-color{background-color: $deep_color;}
+//   .has-indigo-background-color{background-color: $indigo_color;}
+//   .has-light-blue-background-color{background-color: $light_blue_color;}
+//   .has-cyan-background-color{background-color: $cyan_color;}
+//   .has-teal-background-color{background-color: $teal_color;}
+//   .has-light-green-background-color{background-color: $light_green_color;}
+//   .has-lime-background-color{background-color: $lime_color;}
+//   .has-amber-background-color{background-color: $amber_color;}
+//   .has-deep-orange-background-color{background-color: $deep_orange_color;}
+//   .has-white-background-color{background-color: $white_color;}
+// }
+
+// pre.code-box{
+//   padding-top: 26px;
+//   position: relative;
+//   &::before{
+//     content: attr(aria-label);
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background: #0e7ac4;
+//     color: #fff;
+//     padding: 0 1em;
+//     font-size: 16px;
+//   }
+// }
+
+// pre.code-box.auto,
+// pre.code-box.nohighlight{
+//   padding-top: 0.5em;
+//   &::before{
+//     display: none;
+//   }
+// }
+
+.body .wp-block-image{
+  figcaption{
+    margin: 0;
+    font-size: 0.7em;
+    opacity: 0.8;
+    padding: 0 6px;
+  }
+}

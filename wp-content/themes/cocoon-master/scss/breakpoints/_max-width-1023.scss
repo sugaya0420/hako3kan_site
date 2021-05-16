@@ -1,0 +1,145 @@
+.navi-footer{
+  float: none;
+  margin: 0;
+  width: 100%;
+}
+
+.copyright{
+  width: 100%;
+}
+
+.navi-footer-in > ul{
+  justify-content: center;
+  padding: 1em;
+}
+
+.footer-widgets{
+  display: block;
+  // flex-direction: column;
+  >div{
+    width: 100%;
+  }
+}
+
+.content-in{
+  display: block;
+  //flex-direction: column;
+}
+
+main.main,
+div.sidebar{
+  display: block;
+  margin: 10px;
+  width: auto;
+}
+
+.footer-bottom-logo,
+.footer-bottom-content{
+  float: none;
+}
+
+.footer-bottom-logo{
+  line-height: 1;
+  // .logo-image{
+  //   // .site-name{
+  //   //   font-size: 1em;
+  //   // }
+  // }
+}
+
+.footer-bottom-content{
+  text-align: center;
+}
+
+.fb-like-message{
+  font-size: 0.8em;
+  line-height: 1.4;
+}
+
+.sidebar-scroll{
+  position: static;
+}
+
+
+//ヘッダーなどの背景画像
+.ba-fixed.header, .ba-fixed.appeal{
+  background-attachment: scroll;
+}
+
+.header, .appeal{
+  background-size: cover;
+}
+
+.footer-bottom-logo{
+  position: relative;
+  bottom: auto;
+}
+.logo-footer{
+  margin: 8px auto;
+}
+
+
+.mobile-menu-buttons{
+  display: flex;
+  align-items: stretch;
+  >li{
+    padding-top: 3px;
+  }
+}
+
+.mobile-header-menu-buttons{
+  top: 0;
+  bottom: auto;
+  justify-content: space-around;
+  min-width: 46px;
+  z-index: 3;
+  box-shadow: 0 0 5px darkgrey;
+}
+
+.has-logo-button{
+  .menu-button{
+    width: 70px;
+  }
+
+  .logo-menu-button{
+    flex-grow: 99;
+  }
+}
+
+.no-mobile-sidebar .sidebar,
+.mobile-button-fmb .go-to-top-button,
+.no-mobile-header-logo #header .logo-header{
+  display: none;
+}
+
+.mblt-header-mobile-buttons{
+  margin-top: 46px;
+}
+.mblt-footer-mobile-buttons{
+  margin-bottom: 50px;
+}
+.mblt-header-and-footer-mobile-buttons{
+  margin-top: 46px;
+  margin-bottom: 50px;
+}
+.scrollable-mobile-buttons{
+  margin-bottom: 0;
+}
+
+.navi-footer-in > .menu-footer{
+  justify-content: center;
+}
+
+.footer-bottom.fdt-left-and-right .footer-bottom-content{
+  flex-direction: column;
+}
+
+// //ヘッダーモバイルボタン表示時にサイトロゴを表示しない
+// .no-mobile-header-logo .logo-header {
+//   display: none;
+// }
+
+.mblt-footer-mobile-buttons .go-to-top-button,
+.mblt-header-and-footer-mobile-buttons .go-to-top-button {
+  display: none;
+}
