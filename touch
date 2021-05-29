@@ -1,0 +1,5 @@
+Host lolipop
+  HostName     ssh.lolipop.jp
+  Port         2222
+  User         boy.jp-randy-papi-153
+  IdentityFile ~/.ssh/id_rsa
