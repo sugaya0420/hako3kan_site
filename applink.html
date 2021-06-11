@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <title>Starting App...</title>
+    <script>
+
+        var url = new URL(window.location.href);
+        var params = url.searchParams;
+        var url_scheme = 'stgsrsapp://stamp/' + params.get('param');
+        var google_play = "https://play.google.com/store/apps/details?id=jp.co.srs.holdings.app&hl=ja&gl=US";
+        var apple_store = "https://apps.apple.com/jp/app/%E5%92%8C%E9%A3%9F%E3%81%95%E3%81%A8-%E5%85%AC%E5%BC%8F%E3%82%A2%E3%83%97%E3%83%AA/id1526090950";
+
+        function onLoad() {
+            if (navigator.userAgent.match(/Android/)) {
+                if (navigator.userAgent.match(/Chrome/)) {
+                    setTimeout(function () {
+                        if (!document.webkitHidden)
+                            window.location.href = google_play;
+                    }, 1000);
+                    window.location.href = url_scheme;
+                } else {
+                    var iframe = document.createElement("iframe");
+                    iframe.style.border = "none";
+                    iframe.style.width = "1px";
+                    iframe.style.height = "1px";
+                    var t = setTimeout(function () {
+                        window.location = google_play;
+                    }, 1000);
+                    iframe.onload = function () {
+                        clearTimeout(t)
+                    };
+                    iframe.src = url_scheme;
+                    document.body.appendChild(iframe);
+                }
+            } else if (navigator.userAgent.match(/iPhone|iPad|iPod/)) {
+                // setTimeout(function () {
+                //     if (!document.webkitHidden) {
+                //         window.location = apple_store;
+                //     }
+                // }, 1000);
+                // window.location = url_scheme;
+                var checkedAt = new Date();
+                setTimeout(function() {
+                    var t = new Date() - checkedAt;
+                    if (t < 5500) {
+                        window.location = apple_store;
+                    }
+                }, 5000);
+                window.location = url_scheme;
+            } else {
+                // var img = document.createElement("img");
+                // img.src = "http://192.168.99.100:8084/html/img/appicon.svg";
+                // var body = [];
+                // body.push(
+                //     '<body>'
+                // );
+                // document.body.appendChild(img);
+            }
+        }
+    </script>
+</head>
+<body onload="onLoad()" style="background-color: #F6F7F9;">
+    <div style="position: relative;width: 100%;height: 100%;">
+        <div style="position: absolute;left: 50%;top: 50%;width: 50%;">
+            <div style="align-items: center;display: flex;flex-direction: column;transform: translate(-50%,-50%);">
+                <img src="https://hako3kan.com/images/washokusato/appicon.svg" style="width: 40%;">
+                <p style="font-weight: bold;width: 100%;font-size: 30px;text-align: center;">和食さと　公式アプリ</p>
+                <a href="https://apps.apple.com/jp/app/%E5%92%8C%E9%A3%9F%E3%81%95%E3%81%A8-%E5%85%AC%E5%BC%8F%E3%82%A2%E3%83%97%E3%83%AA/id1526090950" style="margin-top: 20px;width: 60%;">
+                    <img src="https://hako3kan.com/images/washokusato/app-storeicon.svg" style="width: 100%">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=jp.co.srs.holdings.app&hl=ja&gl=US" style="margin-top: 20px;width: 60%;">
+                    <img src="https://hako3kan.com/images/washokusato/googleicon.svg" style="width: 100%">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
